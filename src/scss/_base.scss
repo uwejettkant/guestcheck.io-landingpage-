@@ -1,3 +1,51 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+body {
+  --font-primary: 'Heebo', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h1,
+h2 {
+  font-family: var(--font-secondary);
+  color: var(--dark);
+}
+
+h3 {
+  font-size: 1.56rem;
+  font-weight: bold;
+  line-height: 1.28;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+h3,
+h4 {
+  font-family: var(--font-primary);
+  color: var(--grey);
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
