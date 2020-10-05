@@ -1,0 +1,21 @@
+.icon::before {
+  display: inline-block;
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  color: var(--secondary);
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon::after {
+  display: inline-block;
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  color: var(--secondary);
+  -webkit-font-smoothing: antialiased;
+}
