@@ -106,7 +106,23 @@
   margin: 2.5em auto 10em auto;
 }
 
-@media (max-width: 360px) {
+.red-dot {
+  position: absolute;
+  width: 12.22px;
+  height: 12.22px;
+  left: 23px;
+  top: 1105.79px;
+}
+
+.rose-dot {
+  position: absolute;
+  width: 12.22px;
+  height: 12.22px;
+  left: 339.78px;
+  top: 777.81px;
+}
+
+@media (max-width: 359px) {
   .header__title {
     font-size: 1rem;
   }
@@ -125,12 +141,14 @@
   }
 
   .fa-li {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
+    line-height: 20px;
+    padding: 0.15em;
   }
 
-  .fa-check-circle {
-    font-size: 1.5rem;
+  .fa-check {
+    font-size: 0.8rem;
   }
 
   .cta-hero__list-item {
@@ -148,5 +166,39 @@
 
   .cta-hero__price {
     font-size: 1rem;
+  }
+
+  .red-dot {
+    position: absolute;
+    width: 12.22px;
+    height: 12.22px;
+    left: 15px;
+    top: 1105.79px;
+  }
+
+  .rose-dot {
+    position: absolute;
+    width: 12.22px;
+    height: 12.22px;
+    left: 255px;
+    top: 600.81px;
+  }
+}
+
+@media (min-width: 410px) {
+  .red-dot {
+    position: absolute;
+    width: 12.22px;
+    height: 12.22px;
+    left: 33px;
+    top: 1105.79px;
+  }
+
+  .rose-dot {
+    position: absolute;
+    width: 12.22px;
+    height: 12.22px;
+    left: 365.78px;
+    top: 777.81px;
   }
 }
