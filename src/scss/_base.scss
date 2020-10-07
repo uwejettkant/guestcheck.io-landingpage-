@@ -63,3 +63,13 @@ img {
   grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
   grid-gap: 1em;
 }
+
+@media (min-width: 768px) {
+  .main__grid {
+    display: grid;
+    grid-template-columns:
+      minmax(1em, 1fr)
+      repeat(4, minmax(1em, 314px)) minmax(1em, 1fr);
+    grid-gap: 1px;
+  }
+}
