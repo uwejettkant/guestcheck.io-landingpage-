@@ -61,7 +61,7 @@ img {
 .main__grid {
   display: grid;
   grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
-  grid-gap: 1em;
+  grid-gap: 0.5em;
 }
 
 @media (min-width: 768px) {
