@@ -1,3 +1,75 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+:root {
+  --font-primary: 'Heebo', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: va(--primary);
+  color: var(--dark);
+  background: var(--white);
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h1,
+h2 {
+  font-family: var(--font-secondary);
+  color: var(--dark);
+}
+
+h3 {
+  font-size: 1.56rem;
+  font-weight: bold;
+  line-height: 1.28;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+h3,
+h4 {
+  font-family: var(--font-primary);
+  color: var(--grey);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.main__grid {
+  display: grid;
+  grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
+  grid-gap: 1em;
+}
+
+@media (min-width: 768px) {
+  .main__grid {
+    display: grid;
+    grid-template-columns:
+      minmax(1em, 1fr)
+      repeat(4, minmax(1em, 314px)) minmax(1em, 1fr);
+    grid-gap: 1px;
+  }
 }

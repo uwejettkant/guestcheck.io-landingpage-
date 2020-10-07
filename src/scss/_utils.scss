@@ -19,3 +19,17 @@
   color: var(--secondary);
   -webkit-font-smoothing: antialiased;
 }
+
+.btn-blue {
+  width: 230px;
+  height: 72px;
+  border-radius: 20px;
+  color: var(--white);
+  border: none;
+  font-size: 1rem;
+  line-height: 0.8;
+  letter-spacing: -0.64px;
+  font-family: var(--font-secondary);
+  font-weight: bold;
+  background-color: var(--blush-blue);
+}
