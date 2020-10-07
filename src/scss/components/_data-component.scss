@@ -26,7 +26,6 @@
 .data__bullets {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .data__bullet--description {
@@ -36,16 +35,122 @@
   color: var(--grey);
 }
 
+// .data__red-dot-left {
+//   grid-column: 2 / -2;
+//   justify-self: end;
+//   position: relative;
+//   width: 12.22px;
+//   height: 12.22px;
+//   transform: translateY(-8250%);
+// }
+
+// .data__red-dot-right {
+//   grid-column: 2 / -2;
+//   justify-self: start;
+//   position: relative;
+//   width: 12.22px;
+//   height: 12.22px;
+//   transform: translateY(-10200%);
+// }
+
+// .data__circle {
+//   grid-column: 2 / -2;
+//   justify-self: start;
+//   position: sticky;
+//   width: 167.5px;
+//   height: 167.5px;
+//   z-index: -1;
+//   transform: translateY(-750%);
+// }
+
+// .data__quater-circle {
+//   grid-column: 2 / -2;
+//   justify-self: end;
+//   position: relative;
+//   width: 100.4px;
+//   height: 99.8px;
+//   z-index: -1;
+//   transform: translateY(-1375%);
+// }
+
+// .data__lines {
+//   grid-column: 2 / -2;
+//   justify-self: end;
+//   position: relative;
+//   width: 97.1px;
+//   height: 97.7px;
+//   z-index: -1;
+//   transform: translateY(-1285%);
+// }
+
 @media (max-width: 359px) {
-  .data__bullet--description {
-    margin-left: 1.75em;
+  .data__red-dot-right {
+    grid-column: 1 / 2;
+    justify-self: end;
+    transform: translateY(-11200%);
+  }
+
+  .data__red-dot-left {
+    grid-column: 3 / 4;
+    justify-self: start;
+    transform: translateY(-7500%);
+  }
+
+  .data__circle,
+  .data__quater-circle,
+  .data__lines {
+    visibility: hidden;
   }
 }
+
+// @media (min-width: 400px) {
+//   .data__red-dot-left {
+//     transform: translateY(-8000%);
+//   }
+
+//   .data__red-dot-right {
+//     transform: translateY(-10000%);
+//   }
+
+//   .data__circle {
+//     transform: translateY(-725%);
+//   }
+
+//   .data__quater-circle {
+//     transform: translateY(-1350%);
+//   }
+
+//   .data__lines {
+//     transform: translate(-25%, -1225%);
+//   }
+// }
+
+// @media (min-width: 414px) {
+//   .data__red-dot-left {
+//     transform: translateY(-7500%);
+//   }
+
+//   .data__red-dot-right {
+//     transform: translateY(-9600%);
+//   }
+
+//   .data__circle {
+//     transform: translate(15%, -700%);
+//   }
+
+//   .data__quater-circle {
+//     transform: translate(-10%, -1300%);
+//   }
+
+//   .data__lines {
+//     transform: translate(-25%, -1175%);
+//   }
+// }
 
 @media (min-width: 768px) {
   .data__app-image {
     grid-column: 2 / 4;
-    grid-row: 1 / 10;
+    grid-row: 1 / 9;
     height: 632px;
   }
 
