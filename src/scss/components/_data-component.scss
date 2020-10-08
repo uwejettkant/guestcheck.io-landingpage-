@@ -6,8 +6,17 @@
   grid-column: 2 / -2;
 }
 
-.data__app-image {
+.data__image-wrapper {
+  grid-column: 2 / -2;
+  width: 291.97px;
   margin: 0 auto 6.75em auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.data__app-image {
+  margin: 0 auto;
 }
 
 .data__title {
@@ -35,53 +44,46 @@
   color: var(--grey);
 }
 
-// .data__red-dot-left {
-//   grid-column: 2 / -2;
-//   justify-self: end;
-//   position: relative;
-//   width: 12.22px;
-//   height: 12.22px;
-//   transform: translateY(-8250%);
-// }
+.data__red-dot-left {
+  position: absolute;
+  width: 12.22px;
+  height: 12.22px;
+  transform: translate(0%, 250%);
+}
 
-// .data__red-dot-right {
-//   grid-column: 2 / -2;
-//   justify-self: start;
-//   position: relative;
-//   width: 12.22px;
-//   height: 12.22px;
-//   transform: translateY(-10200%);
-// }
+.data__red-dot-right {
+  align-self: flex-end;
+  position: absolute;
+  width: 12.22px;
+  height: 12.22px;
+  transform: translate(-110%, 2250%);
+}
 
-// .data__circle {
-//   grid-column: 2 / -2;
-//   justify-self: start;
-//   position: sticky;
-//   width: 167.5px;
-//   height: 167.5px;
-//   z-index: -1;
-//   transform: translateY(-750%);
-// }
+.data__circle {
+  position: absolute;
+  width: 167.5px;
+  height: 167.5px;
+  z-index: -1;
+  transform: translate(5%, 25%);
+}
 
-// .data__quater-circle {
-//   grid-column: 2 / -2;
-//   justify-self: end;
-//   position: relative;
-//   width: 100.4px;
-//   height: 99.8px;
-//   z-index: -1;
-//   transform: translateY(-1375%);
-// }
+.data__quater-circle {
+  align-self: flex-end;
+  position: absolute;
+  width: 100.4px;
+  height: 99.8px;
+  z-index: -1;
+  transform: translate(0%, 105%);
+}
 
-// .data__lines {
-//   grid-column: 2 / -2;
-//   justify-self: end;
-//   position: relative;
-//   width: 97.1px;
-//   height: 97.7px;
-//   z-index: -1;
-//   transform: translateY(-1285%);
-// }
+.data__lines {
+  align-self: flex-end;
+  position: absolute;
+  width: 97.1px;
+  height: 97.7px;
+  z-index: -1;
+  transform: translate(0%, 375%);
+}
 
 @media (max-width: 359px) {
   .data__red-dot-right {
