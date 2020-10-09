@@ -87,6 +87,15 @@
 }
 
 @media (max-width: 359px) {
+  .data__bullets {
+    flex-direction: column;
+    margin-top: 1em;
+  }
+
+  .data__bullet--description {
+    margin-left: 0;
+  }
+
   .data__red-dot-left,
   .data__red-dot-right,
   .data__circle,

@@ -81,7 +81,7 @@
 .try-it__bullet-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 2fr);
+  //   grid-template-rows: repeat(2, 2fr);
 }
 
 .icon {
@@ -109,4 +109,30 @@
   font-size: 1rem;
   line-height: 2;
   color: var(--grey);
+}
+
+@media (max-width: 359px) {
+  .try-it__red-dot,
+  .try-it__plant,
+  .green-dots,
+  .try-it__circle,
+  .yellow-circle {
+    display: none;
+  }
+
+  .try-it__image-wrapper {
+    width: auto;
+  }
+
+  .try-it__first-bullet {
+    grid-row: 1 / 2;
+  }
+
+  .try-it__second-bullet {
+    grid-row: 2 / 3;
+  }
+
+  .try-it__third-bullet {
+    grid-row: 3 / 4;
+  }
 }
