@@ -1,0 +1,30 @@
+.about {
+  background: var(--light-grey);
+  padding: 8em 0 5.3125em 0;
+}
+
+.about > * {
+  grid-column: 2 / -2;
+}
+
+.about__title {
+  margin: 0;
+}
+
+.about__first-paragraph,
+.about__second-paragraph {
+  font-size: 1rem;
+  line-height: 2;
+  color: var(--grey);
+}
+
+.about__bullets {
+  display: flex;
+}
+
+.about__bullet--description {
+  font-size: 1rem;
+  line-height: 2;
+  margin-left: 1.25em;
+  color: var(--grey);
+}
