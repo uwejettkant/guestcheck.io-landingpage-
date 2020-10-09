@@ -77,3 +77,36 @@
   line-height: 2;
   color: var(--grey);
 }
+
+.try-it__bullet-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 2fr);
+}
+
+.icon {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.6;
+  color: var(--grey);
+  display: flex;
+  flex-direction: row;
+
+  &::before {
+    content: '\f00c';
+    font-size: 1rem;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50px;
+    margin-right: 1.25em;
+    background: var(--light-green);
+    text-align: center;
+  }
+}
+
+.try-it__second-paragraph {
+  font-size: 1rem;
+  line-height: 2;
+  color: var(--grey);
+}
