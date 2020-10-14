@@ -26,6 +26,10 @@
   justify-self: flex-end;
 }
 
+.about__circle-lage {
+  display: none;
+}
+
 .about__first-paragraph {
   margin-top: 0;
 }
@@ -145,6 +149,13 @@
     justify-self: flex-end;
   }
 
+  .about__circle-lage {
+    display: inline-block;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    justify-self: center;
+  }
+
   .about__first-paragraph {
     grid-column: 2 / 4;
     margin-right: 2em;
@@ -175,6 +186,14 @@
       width: 65px;
       height: 65px;
     }
+
+    .about__circle-small {
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      left: 325px;
+      top: -25px;
+    }
   }
 
   .about__bullet--description {
@@ -191,6 +210,10 @@
     &:nth-child(3) {
       max-width: 341px;
     }
+  }
+
+  .bullet-three {
+    position: relative;
   }
 }
 
@@ -248,6 +271,11 @@
     img {
       width: 80px;
       height: 80px;
+    }
+
+    .about__circle-small {
+      left: 425px;
+      top: -25px;
     }
   }
 
