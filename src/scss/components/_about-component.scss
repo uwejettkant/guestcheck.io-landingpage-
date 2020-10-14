@@ -1,6 +1,10 @@
 .about {
   background: var(--light-grey);
   padding: 8em 0 5.3125em 0;
+  background-image: url('../images/circle-bg-large.svg');
+  background-repeat: no-repeat;
+  background-position-y: 2%;
+  background-size: 151px 231px;
 }
 
 .about > * {
@@ -11,9 +15,25 @@
   margin: 0;
 }
 
+.about__subtitle {
+  margin-bottom: 0;
+}
+
+.about__line-image {
+  margin: 3.5em 0 2.75em 0;
+  max-width: 224px;
+  border: 1px solid var(--stroke);
+  justify-self: flex-end;
+}
+
+.about__first-paragraph {
+  margin-top: 0;
+}
+
 .about__first-paragraph,
 .about__second-paragraph {
   font-size: 1rem;
+  font-family: var(--primary);
   line-height: 2;
   color: var(--grey);
 }
@@ -27,4 +47,223 @@
   line-height: 2;
   margin-left: 1.25em;
   color: var(--grey);
+}
+
+@media (max-width: 320px) {
+  .about__title {
+    font-size: 1.5rem;
+  }
+
+  .about__subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding: 8em 0.5em 4.5em 0.5em;
+    background-position-y: 3%;
+    background-size: 231px 231px;
+  }
+
+  .about__title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    grid-column: 2 / 4;
+    max-width: 331px;
+  }
+
+  .about__subtitle {
+    margin-top: 2.25em;
+    grid-column: 2 / 4;
+    max-width: 331px;
+  }
+
+  .about__line-image {
+    margin: 3.5em 0 3.25em 0;
+    max-width: 224px;
+    justify-self: flex-start;
+  }
+
+  .about__first-paragraph {
+    grid-column: 2 / 4;
+    margin-right: 2em;
+  }
+
+  .about__second-paragraph {
+    grid-column: 4 / 6;
+    margin-top: 0;
+    margin-left: 1em;
+    justify-self: flex-end;
+  }
+
+  .about__bullet-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4em;
+  }
+
+  .about__bullets {
+    align-items: start;
+    margin-right: 1em;
+
+    img {
+      width: 56px;
+      height: 56px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+
+  .about__bullet--description {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    padding: 8em 3em 8.0625em 3em;
+    background-size: 275px 375px;
+    background-position-y: 5%;
+  }
+
+  .about__title {
+    grid-column: 2 / 4;
+    font-size: 3rem;
+  }
+
+  .about__subtitle {
+    grid-column: 2 / 4;
+    margin-top: 1.5em;
+  }
+
+  .about__line-image {
+    margin: 4.5em 0 5.25em 0;
+    max-width: 537px;
+    justify-self: flex-end;
+  }
+
+  .about__first-paragraph {
+    grid-column: 2 / 4;
+    margin-right: 2em;
+    width: 425px;
+  }
+
+  .about__second-paragraph {
+    grid-column: 4 / 6;
+    margin-top: 0;
+    margin-left: 1em;
+    justify-self: flex-start;
+    width: 452px;
+  }
+
+  .about__bullet-wrapper {
+    grid-column: 2 / 6;
+    margin-top: 8em;
+    justify-content: space-between;
+    padding: 0 3em 0 0;
+  }
+
+  .about__bullets {
+    align-items: start;
+    flex-direction: column;
+    margin: 0;
+
+    img {
+      width: 65px;
+      height: 65px;
+    }
+  }
+
+  .about__bullet--description {
+    margin: 2.5em 0 0 0;
+
+    &:nth-child(1) {
+      max-width: 252px;
+    }
+
+    &:nth-child(2) {
+      max-width: 281px;
+    }
+
+    &:nth-child(3) {
+      max-width: 341px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .about {
+    padding: 8em 0 8.0625em 13.25em;
+    background-position-y: 59px;
+    background-size: 362px 520px;
+  }
+
+  .about__title {
+    font-weight: bold;
+    font-size: 3.75rem;
+    grid-column: 2 / 4;
+  }
+
+  .about__subtitle {
+    font-weight: bold;
+    font-size: 1.6525rem;
+    grid-column: 2 / 4;
+    margin-top: 1.5em;
+  }
+
+  .about__line-image {
+    margin: 5em 0 4.5em 0;
+    max-width: 637px;
+  }
+
+  .about__first-paragraph {
+    grid-column: 2 / 4;
+    margin-right: 2em;
+    width: 452px;
+  }
+
+  .about__second-paragraph {
+    grid-column: 4 / 6;
+    margin-top: 0;
+    margin-left: 0;
+    justify-self: flex-start;
+    width: 452px;
+  }
+
+  .about__bullet-wrapper {
+    grid-column: 2 / 6;
+    margin-top: 11em;
+    justify-content: space-between;
+    padding: 0 10em 0 0;
+  }
+
+  .about__bullets {
+    align-items: start;
+    flex-direction: column;
+    margin: 0;
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .about__bullet--description {
+    margin: 2.5em 0 0 0;
+
+    &:nth-child(1) {
+      max-width: 252px;
+    }
+
+    &:nth-child(2) {
+      max-width: 281px;
+    }
+
+    &:nth-child(3) {
+      max-width: 341px;
+    }
+  }
 }

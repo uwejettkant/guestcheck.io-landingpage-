@@ -64,7 +64,7 @@ img {
   grid-gap: 0.5em;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 768px) {
   .main__grid {
     display: grid;
     grid-template-columns:
