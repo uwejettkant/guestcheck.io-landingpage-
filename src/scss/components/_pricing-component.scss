@@ -11,7 +11,7 @@
   background-image: url('../images/pricing-bg-small.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   height: 567px;
   border-radius: 10.5px;
   color: var(--white);
@@ -38,9 +38,9 @@
   font-weight: 500;
   line-height: 1.2;
   text-align: center;
-  margin: 0 0 0 1.55em;
+  margin: 0 0 0 0;
+  align-self: center;
   display: flex;
-  justify-content: start;
   align-items: center;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
@@ -57,6 +57,10 @@
   }
 }
 
+.pricing__price {
+  margin-right: 1.5em;
+}
+
 .pricing__btn {
   background: var(--white);
   color: var(--purple);
@@ -66,11 +70,12 @@
 }
 
 @media (max-width: 320px) {
-  // .about__title {
-  //   font-size: 1.5rem;
-  // }
+  .pricing__bullets {
+    font-size: 1rem;
+  }
 
-  // .about__subtitle {
-  //   font-size: 1.25rem;
-  // }
+  .pricing__btn {
+    font-size: 0.75rem;
+    width: 150px;
+  }
 }
