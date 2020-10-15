@@ -79,3 +79,31 @@
     width: 150px;
   }
 }
+
+@media (min-width: 768px) {
+  .pricing {
+    padding: 7.5em 1em 7.5em 1em;
+  }
+
+  .pricing__content-wrapper {
+    background-image: url('../images/pricing-bg-medium.svg');
+  }
+
+  .pricing__subtitle {
+    display: flex;
+    max-width: 482px;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pricing__content-wrapper {
+    grid-column: 2 / 6;
+    background-image: url('../images/pricing-bg-large.svg');
+  }
+
+  .pricing__title {
+    font-size: 3.75rem;
+    margin-top: 1.5166em;
+  }
+}
