@@ -105,6 +105,7 @@
 }
 
 .try-it__second-paragraph {
+  font-family: var(--font-primary);
   font-size: 1rem;
   line-height: 2;
   color: var(--grey);
@@ -136,7 +137,7 @@
   }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 1024px) {
   .try-it {
     padding-right: 1em;
     padding-top: 4em;
@@ -223,10 +224,7 @@
   }
 
   .try-it__second-paragraph {
-    font-size: 1rem;
-    line-height: 2;
     font-weight: 400;
-    color: var(--grey);
   }
 }
 
