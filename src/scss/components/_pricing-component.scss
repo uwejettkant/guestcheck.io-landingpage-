@@ -1,0 +1,109 @@
+.pricing {
+  background: var(--white);
+  padding: 7.5em 0;
+}
+
+.pricing > * {
+  grid-column: 2 / -2;
+}
+
+.pricing__content-wrapper {
+  background-image: url('../images/pricing-bg-small.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 567px;
+  border-radius: 10.5px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing__title {
+  text-align: center;
+  margin: 2.1em 0 0 0;
+  color: var(--white);
+}
+
+.pricing__subtitle {
+  font-size: 1rem;
+  line-height: 2;
+  text-align: center;
+  margin: 2em 1.25em;
+}
+
+.pricing__bullets {
+  font-family: var(--secondary);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 0 0 0;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+
+  &:nth-of-type(2) {
+    margin-bottom: 1em;
+  }
+
+  &::before {
+    content: url(' ../images/box3.svg');
+    width: 31.5px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 0.5em;
+  }
+}
+
+.pricing__price {
+  margin-right: 1.5em;
+}
+
+.pricing__btn {
+  background: var(--white);
+  color: var(--purple);
+  margin: 36px auto 0 auto;
+  justify-self: center;
+  box-shadow: 0 14px 20px rgba(35, 34, 87, 0.4), 0 48px 48px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 320px) {
+  .pricing__bullets {
+    font-size: 1rem;
+  }
+
+  .pricing__btn {
+    font-size: 0.75rem;
+    width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pricing {
+    padding: 7.5em 1em 7.5em 1em;
+  }
+
+  .pricing__content-wrapper {
+    background-image: url('../images/pricing-bg-medium.svg');
+  }
+
+  .pricing__subtitle {
+    display: flex;
+    max-width: 482px;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pricing__content-wrapper {
+    grid-column: 2 / 6;
+    background-image: url('../images/pricing-bg-large.svg');
+  }
+
+  .pricing__title {
+    font-size: 3.75rem;
+    margin-top: 1.5166em;
+  }
+}
