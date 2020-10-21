@@ -279,7 +279,7 @@
   }
 
   .cta-hero__app {
-    height: 632px;
+    height: 532px;
     z-index: 1;
     border-top-left-radius: 50px;
     margin: 0 auto;
@@ -295,14 +295,14 @@
     width: 150px;
     height: 255px;
     z-index: 1;
-    transform: translate(15%, 137%);
+    transform: translate(15%, 100%);
     object-fit: cover;
   }
 
   .red-dot {
     width: 24px;
     height: 24px;
-    transform: translate(-120%, 2275%);
+    transform: translate(-120%, 2000%);
   }
 
   .rose-dot {
@@ -313,6 +313,10 @@
 }
 
 @media (min-width: 1024px) {
+  .cta-hero__app {
+    height: 632px;
+  }
+
   .header__content-wrapper,
   .cta-hero__content-wrapper {
     margin-left: 3em;

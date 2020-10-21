@@ -22,7 +22,7 @@
   position: absolute;
   width: 12.22px;
   height: 12.22px;
-  transform: translate(0, 3550%);
+  transform: translate(50%, 4250%);
 }
 
 .try-it__circle {
@@ -31,16 +31,16 @@
   width: 167.5px;
   height: 167.5px;
   z-index: -1;
-  transform: translate(0, 100%);
+  transform: translate(3%, 125%);
 }
 
 .try-it__plant {
   align-self: flex-start;
   position: absolute;
-  width: 81.5px;
-  height: 162.6px;
+  width: 156.5px;
+  height: 183.2px;
   object-fit: cover;
-  transform: translate(-25%, 165%);
+  transform: translate(-45%, 181%);
 }
 
 .green-dots {
@@ -49,7 +49,7 @@
   width: 163.1px;
   height: 77.8px;
   z-index: -1;
-  transform: translate(10%, 100%);
+  transform: translate(-5%, 100%);
 }
 
 .yellow-circle {
@@ -58,7 +58,7 @@
   width: 77.3px;
   height: 77.3px;
   z-index: -1;
-  transform: translate(-30%, -20%);
+  transform: translate(-15%, -5%);
 }
 
 .try-it__content-wrapper {
@@ -137,7 +137,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .try-it {
     padding-right: 1em;
     padding-top: 4em;
@@ -147,8 +147,9 @@
     grid-column: 4 / 6;
     grid-row: 1 / 9;
     margin: 0 auto;
-    width: 425px;
+    width: 347px;
     padding-top: 3em;
+    align-self: end;
   }
 
   .try-it__app-image {
@@ -162,7 +163,7 @@
     position: absolute;
     width: 24px;
     height: 24px;
-    transform: translate(0, 2300%);
+    transform: translate(-75%, 2100%);
   }
 
   .try-it__circle {
@@ -171,16 +172,16 @@
     width: 167.5px;
     height: 167.5px;
     z-index: -1;
-    transform: translate(-20%, 155%);
+    transform: translate(-15%, 155%);
   }
 
   .try-it__plant {
     align-self: flex-start;
     position: absolute;
-    width: 145px;
-    height: 275px;
+    height: 191px;
+    width: 95px;
     object-fit: cover;
-    transform: translate(0%, 98%);
+    transform: translate(0%, 167%);
   }
 
   .green-dots {
@@ -189,7 +190,7 @@
     width: 163.1px;
     height: 77.8px;
     z-index: -1;
-    transform: translate(31%, 100%);
+    transform: translate(15%, 100%);
   }
 
   .yellow-circle {
@@ -198,12 +199,12 @@
     width: 77.3px;
     height: 77.3px;
     z-index: -1;
-    transform: translate(-80%, -25%);
+    transform: translate(-50%, -10%);
   }
 
   .try-it__content-wrapper {
     grid-column: 2 / 4;
-    margin-left: 3em;
+    margin-left: 1em;
   }
 
   .try-it__title {
@@ -228,6 +229,60 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .try-it__image-wrapper {
+    width: 425px;
+  }
+
+  .try-it__app-image {
+    height: 632px;
+  }
+
+  .try-it__red-dot {
+    align-self: flex-end;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    transform: translate(-75%, 2500%);
+  }
+
+  .try-it__circle {
+    align-self: flex-end;
+    position: absolute;
+    width: 167.5px;
+    height: 167.5px;
+    z-index: -1;
+    transform: translate(-20%, 155%);
+  }
+
+  .try-it__plant {
+    align-self: flex-start;
+    position: absolute;
+    width: 145px;
+    height: 275px;
+    object-fit: cover;
+    transform: translate(-10%, 121%);
+  }
+
+  .green-dots {
+    align-self: flex-start;
+    position: absolute;
+    width: 163.1px;
+    height: 77.8px;
+    z-index: -1;
+    transform: translate(20%, 100%);
+  }
+
+  .yellow-circle {
+    align-self: flex-end;
+    position: absolute;
+    width: 77.3px;
+    height: 77.3px;
+    z-index: -1;
+    transform: translate(-75%, -5%);
+  }
+}
+
 @media (min-width: 1250px) {
   .try-it {
     padding-top: 1em;
@@ -249,7 +304,7 @@
     position: absolute;
     width: 24px;
     height: 24px;
-    transform: translate(0, 3550%);
+    transform: translate(-75%, 3250%);
   }
 
   .try-it__circle {
@@ -258,7 +313,7 @@
     width: 312px;
     height: 312px;
     z-index: -1;
-    transform: translate(0%, 125%);
+    transform: translate(-5%, 125%);
   }
 
   .try-it__plant {
@@ -267,7 +322,7 @@
     width: 173px;
     height: 344.9px;
     object-fit: cover;
-    transform: translate(-20%, 145%);
+    transform: translate(-20%, 132%);
   }
 
   .green-dots {
@@ -285,7 +340,7 @@
     width: 164px;
     height: 164px;
     z-index: -1;
-    transform: translate(-20%, -20%);
+    transform: translate(-35%, -15%);
   }
 
   .try-it__content-wrapper {

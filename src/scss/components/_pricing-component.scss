@@ -87,6 +87,7 @@
 
   .pricing__content-wrapper {
     background-image: url('../images/pricing-bg-medium.svg');
+    height: 521px;
   }
 
   .pricing__subtitle {
@@ -100,6 +101,8 @@
   .pricing__content-wrapper {
     grid-column: 2 / 6;
     background-image: url('../images/pricing-bg-large.svg');
+    border-radius: 40px;
+    height: 580px;
   }
 
   .pricing__title {
