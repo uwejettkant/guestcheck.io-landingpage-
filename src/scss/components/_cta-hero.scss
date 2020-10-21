@@ -204,6 +204,7 @@
 @media (min-width: 768px) {
   .cta-hero {
     background: var(--white);
+    padding-bottom: 5em;
   }
 
   .header__content-wrapper {
@@ -291,7 +292,7 @@
   .cta-hero__plant {
     align-self: flex-end;
     position: absolute;
-    width: 175px;
+    width: 150px;
     height: 255px;
     z-index: 1;
     transform: translate(15%, 137%);
