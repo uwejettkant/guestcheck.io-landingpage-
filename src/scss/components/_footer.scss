@@ -44,3 +44,9 @@
   margin: 0;
   font-family: var(--secondary);
 }
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 4em 0.5em 2.625em 0.5em;
+  }
+}
